@@ -62,6 +62,24 @@
             /* Maintain aspect ratio */
         }
 
+        .images-section .featured-image {
+            width: 100%;
+            /* Takes full width of the container */
+            display: flex;
+            /* Uses flexbox for centering the image */
+            justify-content: center;
+            /* Centers the image horizontally */
+            margin-bottom: 20px;
+            /* Adds some space below the featured image */
+        }
+
+        /* Ensures the featured image is responsive and maintains aspect ratio */
+        .images-section .featured-image img {
+            width: 200%;
+            /* Adjust this value to your liking */
+            height: auto;
+        }
+
         /* Responsive layout for desktop */
         @media (min-width: 768px) {
             .images-section img {
@@ -74,13 +92,14 @@
 
 <body>
     <div class="container">
-        <img src="logo.png" alt="Logo"
-            style="max-width: 15%; height: auto; display: block; margin: 0 auto 20px;">
-        <h1>The Muir-Óigh of Kilmore Quay</h1>
-        <p>The Muir-Óigh, embodying the mystique of the ocean, are celebrated in Irish folklore as sea maidens with the
+        <img src="logo.png" alt="Logo" style="max-width: 15%; height: auto; display: block; margin: 0 auto 20px;">
+        <h1>The Muir-Óigh of Kilmore Quay / Living Willow Sculpture</h1>
+        <p>The Muir-Óigh (Merrow/Mermaid), embodying the mystique of the ocean, are celebrated in Irish folklore as sea
+            maidens with the
             power to traverse the marine and terrestrial realms. Depicted with human beauty above their sea-tail, these
             beings symbolize the depth and mystery of the sea.</p>
-        <p>This willow sculpture by Anne Lawlor captures the essence of the Muir-Óigh, drawing upon the rich tapestry of
+        <p>This living willow sculpture by Anne Lawlor captures the essence of the Muir-Óigh, drawing upon the rich
+            tapestry of
             Irish lore. The Muir-Óigh are known not only for their enchanting beauty but also for their magical red hats
             adorned with feathers, which allow them to transform back into their mermaid form. Without this hat, they
             are bound to the land, losing their ability to return to the sea.</p>
@@ -92,13 +111,15 @@
 
         <h2>Gallery</h2>
         <div class="images-section">
+            <!-- Featured image in a row by itself -->
+            <div class="featured-image">
+                <img src="images/img6.jpeg" alt="Muir-Óigh Sculpture View 6">
+            </div>
             <!-- Placeholder for images; replace src with actual image paths -->
             <img src="images/img1.jpeg" alt="Muir-Óigh Sculpture View 1">
-            <img src="images/img2.jpeg" alt="Muir-Óigh Sculpture View 2">
             <img src="images/img3.jpeg" alt="Muir-Óigh Sculpture View 3">
             <img src="images/img4.jpeg" alt="Muir-Óigh Sculpture View 4">
             <img src="images/img5.jpeg" alt="Muir-Óigh Sculpture View 5">
-            <img src="images/img6.jpeg" alt="Muir-Óigh Sculpture View 6">
             <img src="images/img7.jpeg" alt="Muir-Óigh Sculpture View 7">
         </div>
 
