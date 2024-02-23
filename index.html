@@ -62,6 +62,8 @@
             /* Maintain aspect ratio */
         }
 
+        /* ... Other styles ... */
+
         .images-section .featured-image {
             width: 100%;
             /* Takes full width of the container */
@@ -75,9 +77,10 @@
 
         /* Ensures the featured image is responsive and maintains aspect ratio */
         .images-section .featured-image img {
-            width: 200%;
-            /* Adjust this value to your liking */
+            max-width: 100%;
+            /* Featured image will not exceed the width of its container */
             height: auto;
+            /* Maintain aspect ratio */
         }
 
         /* Responsive layout for desktop */
