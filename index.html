@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the mystical Muir-Óigh through Anne Lawlor's willow sculpture in Kilmore Quay, Co. Wexford. Discover the lore, including the tale of the red hat, and connect with us on social media.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Muir-Óigh of Kilmore Quay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,32 +24,94 @@
             padding: 20px;
         }
 
-        h1 {
+        h1,
+        h2 {
             color: #017372;
         }
 
         p {
             line-height: 1.6;
         }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            margin-right: 8px;
+        }
+
+        .images-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* This adds space between the images */
+            justify-content: center;
+            /* This will center the images in the container */
+            margin-top: 20px;
+        }
+
+        .images-section img {
+            flex: 0 1 auto;
+            /* Do not grow, but allow shrink */
+            width: calc(50% - 10px);
+            /* Adjust width for 2 images per row, accounting for the gap */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        /* Responsive layout for desktop */
+        @media (min-width: 768px) {
+            .images-section img {
+                width: calc(33.333% - 13.333px);
+                /* Adjust width for 3 images per row */
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <img src="logo.png" alt="Logo"
+            style="max-width: 15%; height: auto; display: block; margin: 0 auto 20px;">
         <h1>The Muir-Óigh of Kilmore Quay</h1>
-        <p>The Muir-Óigh, a figure of Irish mythology, embodies the mystique of the ocean, merging human traits with the
-            enigmatic allure of the sea. Resembling mermaids of lore, the Muir-Óigh are depicted as beautiful women who
-            live beneath the waves, in splendid underwater palaces made from the ocean's treasures.</p>
-        <p>This sculpture, crafted from the willow trees native to the lands surrounding Kilmore Quay, Co. Wexford,
-            seeks to capture the essence of the Muir-Óigh. It represents their beauty, their connection to the natural
-            world, and the deep, untold stories woven into the fabric of Irish folklore.</p>
-        <p>The Muir-Óigh are known for their enchanting songs, which could either guide sailors to safety or lure them
-            into peril, depending on the tales told by the sea. Their stories are a testament to the ancient Irish's
-            deep connection with the sea, a vital element of life on an island nation. This sculpture is a tribute to
-            those stories, inviting reflection on the mysteries that lie beneath the waves and the tales that have been
-            passed down through generations.</p>
-        <p>As you admire this willow sculpture, let your mind wander to the mystical depths of the sea and the legends
-            of the Muir-Óigh that have captivated the hearts of those in Kilmore Quay and beyond.</p>
+        <p>The Muir-Óigh, embodying the mystique of the ocean, are celebrated in Irish folklore as sea maidens with the
+            power to traverse the marine and terrestrial realms. Depicted with human beauty above their sea-tail, these
+            beings symbolize the depth and mystery of the sea.</p>
+        <p>This willow sculpture by Anne Lawlor captures the essence of the Muir-Óigh, drawing upon the rich tapestry of
+            Irish lore. The Muir-Óigh are known not only for their enchanting beauty but also for their magical red hats
+            adorned with feathers, which allow them to transform back into their mermaid form. Without this hat, they
+            are bound to the land, losing their ability to return to the sea.</p>
+        <p>The lore also speaks of their webbed hands and feet, subtle markers of their true nature. These physical
+            traits remind us of their connection to both land and sea, living between two worlds yet belonging fully to
+            neither.</p>
+        <p>This sculpture stands as a tribute to the Muir-Óigh, inviting reflection on the mysteries that lie beneath
+            the waves and the tales passed down through generations in Kilmore Quay, Co. Wexford.</p>
+
+        <h2>Gallery</h2>
+        <div class="images-section">
+            <!-- Placeholder for images; replace src with actual image paths -->
+            <img src="images/img1.jpeg" alt="Muir-Óigh Sculpture View 1">
+            <img src="images/img2.jpeg" alt="Muir-Óigh Sculpture View 2">
+            <img src="images/img3.jpeg" alt="Muir-Óigh Sculpture View 3">
+            <img src="images/img4.jpeg" alt="Muir-Óigh Sculpture View 4">
+            <img src="images/img5.jpeg" alt="Muir-Óigh Sculpture View 5">
+            <img src="images/img6.jpeg" alt="Muir-Óigh Sculpture View 6">
+            <img src="images/img7.jpeg" alt="Muir-Óigh Sculpture View 7">
+        </div>
+
+        <h2>Connect With Us</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/createsannabanana" target="_blank" class="social-icon"><i
+                    class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100046471933582" target="_blank" class="social-icon"><i
+                    class="fab fa-facebook"></i> Facebook</a>
+        </div>
+
+        <p>Created by Anne Lawlor. Follow her journey and discover more enchanting works through her social media
+            channels.</p>
     </div>
 </body>
 
